@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/MainMenuLinear"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="2sp"
+    android:background="@color/contour">
+
+    <RelativeLayout
+        android:id="@+id/SubjectSelectionGridRelativeLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/UserSelectionTextInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="@string/SubjectSelectionIntructionText"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="24sp" />
+        <GridView
+            android:id="@+id/GridViewSubjectSelection"
+            android:layout_below="@id/UserSelectionTextInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="24dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="spacingWidthUniform">
+        </GridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/OverallMainMenuForSelectedSubjectRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutSelectedChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/UserSelectionBox"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/TextViewSelectedUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="@string/userSelectedText"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkerNewPurpleAnaloge2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/SelectedchildImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewSelectedUser"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="25sp"
+                android:background="@mipmap/child4"
+                android:contentDescription="@string/SelectedChildContentDescription"
+                android:scaleType="fitXY"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+
+            <TextView
+                android:id="@+id/SelectedSubjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SelectedchildImage"
+                android:layout_centerInParent="true"
+                android:layout_margin="5sp"
+                android:text="@string/AccessGranted"
+                android:textColor="@color/colorLigherNewPurple"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/ChangeUserButton"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_below="@id/SelectedSubjectName"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_button"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:text="@string/ChangeUserButtonString"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/ActionScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelativeLayoutSelectedChild">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/SurveyBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:animateLayoutChanges="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/White">
+
+                    <TextView
+                        android:id="@+id/InsertFeedbackTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginEnd="10sp"
+                        android:text="@string/SendAFeedbackString"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ContactBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/SurveyBox"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:background="@color/White">
+
+                    <TextView
+                        android:id="@+id/FoundContactTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10sp"
+                        android:text="@string/FoundContactString"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noSubjectAvailableRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="@string/Warning"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkerNewPurpleTriade1"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerText"
+            android:layout_margin="10sp"
+            android:text="@string/WarningNosubjectAvailable"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkerNewPurpleAnaloge2"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

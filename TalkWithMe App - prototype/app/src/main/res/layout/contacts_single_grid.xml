@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15sp"
+    android:layout_centerVertical="true"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/Frame1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White">
+        <RelativeLayout
+            android:id="@+id/imageFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/men_icon2_foreground" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ContactTextFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageFrame">
+
+            <RelativeLayout
+                android:id="@+id/NameBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ContactFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorDarkerNewPurple"
+                    android:text="@string/NameTest"/>
+                <TextView
+                    android:id="@+id/ContactLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ContactFirstName"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorDarkerNewPurple"
+                    android:text="@string/SurnameTest"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ContactDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NameBox"
+                android:text="@string/DescriptionTest"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/ContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Contactemail"
+                android:text="@string/numberTest"
+                android:textAllCaps="false"
+                android:textColor="@color/contour2" />
+
+            <TextView
+                android:id="@+id/Contactemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ContactDescription"
+                android:text="@string/emailTest"
+                android:textColor="@color/contour2"/>
+
+            <TextView
+                android:id="@+id/ContactPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phoneTest"
+                android:layout_below="@id/ContactNumber"
+                android:textColor="@color/contour2" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

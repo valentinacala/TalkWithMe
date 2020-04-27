@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.valentina.talkwithme">
+
+    <!-- This permission is necessary in order for Sunshine to perform network access. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--Permission to allow vibrate
+    <uses-permission android:name="android.permission.VIBRATE" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_my"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/blue"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainMenu"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".NoSubjectMenu"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".SingleSubjectMenu"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".MultipleSubjectsMenu"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".SubjectSelection"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name=".SurveyActivity"
+            android:label=""
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--The LoginActivity is treated as parent of SettingActivity and the up button is displayed-->
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingActivity" />
+        </activity>
+
+        <activity
+            android:name=".ContactActivity"
+            android:label= ""
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+    </application>
+</manifest>

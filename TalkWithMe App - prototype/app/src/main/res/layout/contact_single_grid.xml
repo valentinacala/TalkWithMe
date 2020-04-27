@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15sp"
+    android:layout_centerVertical="true"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/Frame1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White">
+        <RelativeLayout
+            android:id="@+id/imageFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/men_icon2_foreground" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ContactTextFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageFrame">
+            <TextView
+                android:id="@+id/ContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorDarkerNewPurple"
+                android:text="@string/Name1"/>
+
+            <TextView
+                android:id="@+id/ContactDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ContactName"
+                android:text="@string/Description1"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/ContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Contactemail"
+                android:text="@string/number"
+                android:textAllCaps="false"
+                android:textColor="@color/contour2" />
+
+            <TextView
+                android:id="@+id/Contactemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ContactDescription"
+                android:text="@string/email"
+                android:textColor="@color/contour2"/>
+
+            <TextView
+                android:id="@+id/ContactPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:layout_below="@id/ContactNumber"
+                android:textColor="@color/contour2"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Frame1"
+        android:background="@color/White"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:id="@+id/imageFrame2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/men_icon2_foreground" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ContactTextFrame2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageFrame2"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/ContactName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorDarkerNewPurple"
+                android:text="@string/Name2"/>
+
+            <TextView
+                android:id="@+id/ContactDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ContactName2"
+                android:text="@string/Description2"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/ContactNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Contactemail2"
+                android:text="@string/number2"
+                android:textAllCaps="false"
+                android:textColor="@color/contour2"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/Contactemail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ContactDescription2"
+                android:text="@string/email2"
+                android:textColor="@color/contour2"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/ContactPhone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone2"
+                android:layout_below="@id/ContactNumber2"
+                android:textColor="@color/contour2"
+                android:textIsSelectable="true"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkerNewPurple"
+    android:scrollbarSize="2sp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/UserSelectionBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorDarkerNewPurple">
+
+            <HorizontalScrollView
+                android:id="@+id/UserSelectionScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserSelectionTextInstruction"
+                android:layout_centerHorizontal="true">
+                <RelativeLayout
+                    android:id="@+id/RelativeOfImageButtonChildren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp">
+
+                    <ImageView
+                        android:id="@+id/ImageButtonChild1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:background="@mipmap/child1"
+                        android:clickable="true"
+                        android:contentDescription="@string/ImageButtonChild1Description"
+                        android:focusable="true"
+                        android:onClick="ButtonOnClick"
+                        android:src="@mipmap/child1" />
+
+                    <ImageView
+                        android:id="@+id/ImageButtonChild2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toEndOf="@id/ImageButtonChild1"
+                        android:background="@mipmap/child2"
+                        android:clickable="true"
+                        android:contentDescription="@string/ImageButtonChild2Description"
+                        android:focusable="true"
+                        android:onClick="ButtonOnClick"
+                        android:src="@mipmap/child2" />
+
+                    <ImageView
+                        android:id="@+id/ImageButtonChild3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toEndOf="@id/ImageButtonChild2"
+                        android:background="@mipmap/child3"
+                        android:clickable="true"
+                        android:contentDescription="@string/ImageButtonChild3Description"
+                        android:focusable="true"
+                        android:onClick="ButtonOnClick"
+                        android:src="@mipmap/child3" />
+
+                    <ImageView
+                        android:id="@+id/ImageButtonChild4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toEndOf="@id/ImageButtonChild3"
+                        android:background="@mipmap/child4"
+                        android:clickable="true"
+                        android:contentDescription="@string/ImageButtonChild4Description"
+                        android:focusable="true"
+                        android:onClick="ButtonOnClick"
+                        android:src="@mipmap/child4" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/UserSelectionTextInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop ="150sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="5sp"
+                android:text="@string/SubjectSelectionIntructionText"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/RelativeLayoutSelectedChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/UserSelectionBox"
+            android:visibility="visible">
+            <TextView
+                android:id="@+id/TextViewSelectedUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="@string/userSelectedText"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/SelectedchildImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewSelectedUser"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25sp"
+                android:contentDescription="@string/SelectedChildContentDescription"
+                android:scaleType="fitXY"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:background="@mipmap/child4" />
+        </RelativeLayout> -->
+
+    </RelativeLayout>
+
+</ScrollView>

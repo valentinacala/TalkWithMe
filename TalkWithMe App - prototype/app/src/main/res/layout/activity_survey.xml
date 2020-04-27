@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/SurveyRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="2sp">
+
+    <RelativeLayout
+        android:id="@+id/NoQuestionsRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/NoQuestionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:text="@string/NoQuestionText"
+            android:textColor="@color/contour2"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/loadingQuestionsRelativeLayout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <ProgressBar
+             android:id="@+id/LoadingBar"
+             android:layout_width="40sp"
+             android:layout_height="40sp"
+             android:layout_centerInParent="true" />
+
+         <TextView
+             android:id="@+id/LoadingQuestionsText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/LoadingBar"
+             android:layout_centerHorizontal="true"
+             android:text="@string/LoadingQuestionText"
+             android:textColor="@color/contour2"
+             android:textSize="12sp" />
+
+     </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/ReadyQuestionsRelativeLayout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <RelativeLayout
+             android:id="@+id/SurveyHeaderRelativeLayout"
+             android:visibility="visible"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true"
+             android:layout_centerInParent="true"
+             android:background="@color/colorPrimaryDark">
+             <TextView
+                 android:id="@+id/SurveyTextInstruction"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="50sp"
+                 android:layout_marginBottom="20sp"
+                 android:layout_marginLeft="10sp"
+                 android:layout_marginRight="10sp"
+                 android:text="@string/SurveyIntructionText"
+                 android:textColor="@color/contour2"
+                 android:textSize="24sp" />
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_toEndOf="@id/SurveyTextInstruction"
+                 android:layout_alignTop="@id/SurveyTextInstruction"
+                 android:layout_margin="10sp">
+                 <Button
+                     android:id="@+id/AnswersSubmitButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentEnd="true"
+                     android:background="@drawable/rounded_corner_button"
+                     android:text="@string/SubmitAnswersButtonString"
+                     android:textColor="@android:color/white"/>
+             </RelativeLayout>
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/QuestionsAndSubmitRelativeLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/SurveyHeaderRelativeLayout">
+
+             <GridView
+                 android:id="@+id/GridViewQuestionAnswers"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="10sp"
+                 android:gravity="center"
+                 android:columnWidth="100dp"
+                 android:numColumns="1"
+                 android:verticalSpacing="24dp"
+                 android:horizontalSpacing="10dp"
+                 android:scrollbarFadeDuration="0">
+             </GridView>
+         </RelativeLayout>
+
+     </RelativeLayout>
+
+
+
+</RelativeLayout>

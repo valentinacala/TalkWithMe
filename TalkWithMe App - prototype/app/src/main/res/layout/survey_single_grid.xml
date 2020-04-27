@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15sp"
+    android:layout_centerVertical="true">
+    <FrameLayout
+        android:id="@+id/QuestionTextFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/QuestionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="17sp"
+            android:textColor="@color/colorDarkerNewPurple"
+            android:text="@string/QuestionTextExample"/>
+
+        <TextView
+            android:id="@+id/QuestionIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorDarkerNewPurpleAnaloge2"
+        android:foregroundTint="@color/colorDarkerNewPurpleAnaloge2"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/colorDarkerNewPurpleAnaloge2"
+        android:progressTint="@color/colorDarkerNewPurpleAnaloge2"
+        android:scaleX="0.8"
+        android:scaleY="0.8" />
+</LinearLayout>

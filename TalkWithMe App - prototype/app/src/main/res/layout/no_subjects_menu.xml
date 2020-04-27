@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/MainMenuLinear"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="2sp"
+    android:background="@color/contour">
+
+    <RelativeLayout
+        android:id="@+id/noSubjectAvailableRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="@string/Warning"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkerNewPurpleTriade1"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerText"
+            android:layout_margin="10sp"
+            android:text="@string/WarningNosubjectAvailable"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkerNewPurpleAnaloge2"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

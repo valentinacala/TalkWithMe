@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#311B92</color>
+    <color name="colorAccent">#ff4081</color>
+
+    <color name="colorPrimaryDarkTriad">#FF7E19</color>
+
+    <!--Main Menu colors-->
+    <color name="colorDarkerNewPurple">#512DA8</color>
+
+    <color name="colorLightNewPurple">#7E57C2</color>
+    <color name="colorLigherNewPurple">#b39ddb</color>
+
+    <color name="colorDarkerNewPurpleTriade1">#35F44B</color>
+    <color name="colorDarkerNewPurpleTriade2">#B57B42</color>
+
+    <color name="colorDarkerNewPurpleAnaloge1">#6DB37E</color>
+    <color name="colorDarkerNewPurpleAnaloge2">#2abdb6</color>
+    <color name="colorDarkerNewPurpleAnaloge3">#2D5BA6</color>
+    <color name="colorDarkerNewPurpleAnaloge4">#B028B3</color>
+
+    <color name="White">#ffffff</color>
+    <color name="contour2">#29BFB1</color>
+    <color name="contour">#D8FFFD</color>
+
+</resources>

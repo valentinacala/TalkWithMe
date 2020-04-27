@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">TalkWithMe</string>
+    <string name="UserImageDescription">User Image</string>
+
+
+    <string name="outputTest">trial test</string>
+
+    <!--Setting strings -->
+    <string name="action_settings">Settings</string>
+    <string name="Pref_leanguage_eng">Language setting</string>
+    <string name="Pref_leanguage_set_eng">English</string>
+    <string name="Pref_leanguage_set_ita">Italiano</string>
+
+    <!-- Login Strings-->
+    <string name="userIDintrunction">Insert your username here</string>
+    <string name="userPasswordinstruction">Insert your password here</string>
+    <string name="LoginButtonString">Log in</string>
+    <string name="ConnectionFailed">Connection failed. Check connection</string>
+    <string name="AccessDenied">Access denied. Check username and password</string>
+    <string name="AccessGranted">Welcome!</string>
+
+    <!-- Main Menu Strings-->
+    <string name="SubjectSelectionIntructionText">Select one user</string>
+    <string name="SubjectIconImage">It is the icon representing the subject image</string>
+    <string name="ImageButtonChild1Description">Image of the child 1</string>
+    <string name="ImageButtonChild2Description">Image of the child 2</string>
+    <string name="ImageButtonChild3Description">Image of the child 3</string>
+    <string name="ImageButtonChild4Description">Image of the child 4</string>
+    <string name="userSelectedText">You have selected</string>
+    <string name="SelectedChildContentDescription">Image to represent the selected subject by the user</string>
+    <string name="SendAFeedbackString">Send your feedback</string>
+    <string name="FoundContactString">Find a contact</string>
+    <string name="ChangeUserButtonString">Change user</string>
+    <string name="Warning">We are sorry!</string>
+    <string name="WarningNosubjectAvailable"> No profile available yet. Please wait few days or contact the help desk</string>
+
+    <!-- Survey Strings-->
+    <string name="SurveyIntructionText">Give your feedback</string>
+    <string name="QuestionTextExample">How are you?</string>
+    <string name="LoadingQuestionText">Waiting for questions..</string>
+    <string name="NoQuestionText">No questions available yet. Please wait few days or contact the help desk </string>
+    <string name="SubmitAnswersButtonString">Submit</string>
+
+    <!--Contacts Strings-->
+    <string name="ContactIntructionText">Find a contact</string>
+    <string name="LoadingContactText">Waiting for contacts..</string>
+    <string name="NoContactText">No contacts availabile jet.</string>
+
+    <string name="Name1">Dott. Carlo Bianchi</string>
+    <string name="Description1">Medical Doctor of Giampaolo since 2011</string>
+    <string name="number">+39 329 4475612</string>
+    <string name="email"> Carlo.Bianchi@gmail.com</string>
+    <string name="phone">+39 06 4234558</string>
+
+    <string name="Name2">Dott. Francesca Spiruletta</string>
+    <string name="Description2">Psycologist involved in the ATA performed in 2016</string>
+    <string name="number2">+39 333 7892354</string>
+    <string name="email2"> Francesca.Spiruletta@outlook.com</string>
+    <string name="phone2">+39 06 3248975</string>
+
+    <string name="NameTest">Nome </string>
+    <string name="SurnameTest">Cognome </string>
+    <string name="DescriptionTest">Test Description Test Description Test Description Test Description</string>
+    <string name="numberTest"> +00 000 0000000</string>
+    <string name="emailTest">xxxxxxxx.xxxxxx@xxxxxx.xx</string>
+    <string name="phoneTest">+ph 000 0000000</string>
+
+
+    <!-- Notification-->
+    <string name="water_chug_toast">Interact with the app</string>
+    <string name="charging_reminder_notification_title">Need help?</string>
+    <string name="charging_reminder_notification_body">Access to the app for useful information!</string>
+    <string name="main_notification_channel_name">Primary</string>
+
+</resources>

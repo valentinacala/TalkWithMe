@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.valentina.talkwithme.LoginActivity">
+
+    <ImageView
+        android:id="@+id/UserImage"
+        android:contentDescription="@string/UserImageDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/blue_launcher_foreground"
+        android:scaleY="2"
+        android:scaleX="2"/>
+    <RelativeLayout
+        android:id="@+id/AccessBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserImage">
+
+        <EditText
+            android:id="@+id/EditUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:hint="@string/userIDintrunction"
+            android:inputType="text"
+            android:shadowColor="@android:color/white"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/EditUserPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EditUserId"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:hint="@string/userPasswordinstruction"
+            android:inputType="textPassword"
+            android:shadowColor="@android:color/white"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/IDtextTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EditUserPassword"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ButtonBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AccessBox">
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_corner_button"
+            android:text="@string/LoginButtonString"
+            android:textColor="@android:color/white" />
+        <ProgressBar
+            android:id="@+id/LoadingBar"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_below="@id/LoginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/LoginMessageToUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LoginButton"
+            android:layout_margin="5sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDarkTriad"
+            android:textSize="20sp"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</RelativeLayout>
+
